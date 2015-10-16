@@ -1,0 +1,109 @@
+/* line 6, ../sass/practice3.scss */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 10, ../sass/practice3.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 14, ../sass/practice3.scss */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 19, ../sass/practice3.scss */
+body {
+  color: #555;
+}
+
+/* line 24, ../sass/practice3.scss */
+h3 {
+  padding-left: 10px;
+}
+
+/* line 27, ../sass/practice3.scss */
+p {
+  padding: 10px;
+  color: #666;
+}
+
+/* line 31, ../sass/practice3.scss */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 35, ../sass/practice3.scss */
+p {
+  text-align: left;
+}
+
+@media only screen and (min-width: 320px) {
+  /* line 40, ../sass/practice3.scss */
+  .flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+
+  /* line 48, ../sass/practice3.scss */
+  .flex-item {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+  }
+
+  /* line 63, ../sass/practice3.scss */
+  .author {
+    font-weight: bold;
+  }
+
+  /* line 66, ../sass/practice3.scss */
+  h3.book_title {
+    width: 100%;
+    font-size: 1.5rem;
+    float: left;
+  }
+
+  /* line 71, ../sass/practice3.scss */
+  p {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 75, ../sass/practice3.scss */
+  .author {
+    font-weight: bold;
+  }
+
+  /* line 78, ../sass/practice3.scss */
+  h3.book_title {
+    font-size: 1.5rem;
+    float: left;
+    clear: both;
+  }
+
+  /* line 83, ../sass/practice3.scss */
+  p {
+    font-size: 1.2rem;
+    padding: 8px;
+    color: #666;
+  }
+}

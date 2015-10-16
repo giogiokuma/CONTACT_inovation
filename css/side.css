@@ -1,0 +1,37 @@
+@media only screen and (min-width: 320px) {
+  /* line 7, ../sass/side.scss */
+  .container-main {
+    background: #f9f9f9f;
+    margin-bottom: 10px;
+  }
+
+  /* line 11, ../sass/side.scss */
+  .container-sub {
+    background: #fff;
+  }
+
+  /* line 15, ../sass/side.scss */
+  .container-main, .container-sub {
+    padding: 2%;
+    border-radius: 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 21, ../sass/side.scss */
+  .cd-main-content {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  /* line 26, ../sass/side.scss */
+  .container-main {
+    margin: 0 10px 0 0;
+    -webkit-flex: 2;
+    flex: 2;
+  }
+
+  /* line 31, ../sass/side.scss */
+  .container-sub {
+    width: 15%;
+  }
+}

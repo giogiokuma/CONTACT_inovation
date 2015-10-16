@@ -1,0 +1,177 @@
+/* line 6, ../sass/practice2.scss */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 10, ../sass/practice2.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 14, ../sass/practice2.scss */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 19, ../sass/practice2.scss */
+body {
+  color: #555;
+}
+
+/* line 23, ../sass/practice2.scss */
+.item {
+  border-radius: 0;
+  background: #edf;
+  padding: 0;
+  margin: 7px;
+  text-align: center;
+}
+
+/*.item {
+  border-radius:0px;
+  background:#fff;
+  padding:0px;
+  margin:7px;
+  text-align:center;
+  box-shadow:0 0 7px 0 #CCC;
+  -moz-box-shadow:0 0 7px 0 #CCC;
+  -webkit-box-shadow:0 0 7px 0 #CCC
+}*/
+/* line 41, ../sass/practice2.scss */
+h3 {
+  padding-left: 10px;
+}
+
+/* line 44, ../sass/practice2.scss */
+p {
+  padding: 10px;
+  color: #666;
+}
+
+/* line 48, ../sass/practice2.scss */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 52, ../sass/practice2.scss */
+p {
+  text-align: left;
+}
+
+@media only screen and (min-width: 320px) {
+  /* line 57, ../sass/practice2.scss */
+  .item {
+    text-align: left;
+  }
+
+  /* line 60, ../sass/practice2.scss */
+  .author {
+    font-weight: bold;
+  }
+
+  /* line 63, ../sass/practice2.scss */
+  h3.book_title {
+    width: 100%;
+    font-size: 1.5rem;
+    float: left;
+  }
+
+  /* line 68, ../sass/practice2.scss */
+  p {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 72, ../sass/practice2.scss */
+  .flexbox {
+    width: 768px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    max-height: 800px;
+  }
+
+  /* line 80, ../sass/practice2.scss */
+  .item {
+    width: 30%;
+  }
+
+ /* .flexbox {
+  border:1px solid #999;
+  width:768px;
+  @include display-flex();
+  @include flex-wrap(wrap);
+  @include flex-direction(column);
+  max-height:1200px;
+  }
+
+  .item {
+  width:30%;
+  box-shadow:0 0 7px 0 #CCC;
+  -moz-box-shadow:0 0 7px 0 #CCC;
+  -webkit-box-shadow:0 0 7px 0 #CCC
+  }*/
+  /* line 99, ../sass/practice2.scss */
+  .author {
+    font-weight: bold;
+  }
+
+  /* line 102, ../sass/practice2.scss */
+  h3.book_title {
+    font-size: 1.5rem;
+    float: left;
+    clear: both;
+  }
+
+  /* line 107, ../sass/practice2.scss */
+  p {
+    font-size: 1.2rem;
+    padding: 8px;
+    color: #666;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  /* line 115, ../sass/practice2.scss */
+  .flexbox {
+    width: 1170px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+  }
+}

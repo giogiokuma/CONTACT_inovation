@@ -1,0 +1,38 @@
+/* line 4, ../sass/practice1.scss */
+.main {
+  background: #fcc;
+  margin-bottom: 10px;
+}
+
+/* line 10, ../sass/practice1.scss */
+.side {
+  background: #fea;
+}
+
+/* line 14, ../sass/practice1.scss */
+.main,
+.side {
+  padding: 2%;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 22, ../sass/practice1.scss */
+  .flexbox {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  /* line 25, ../sass/practice1.scss */
+  .main {
+    width: 90%;
+    margin: 0 10px 0 0;
+    -webkit-flex: 2;
+    flex: 2;
+  }
+
+  /* line 30, ../sass/practice1.scss */
+  .side {
+    width: 10%;
+  }
+}
