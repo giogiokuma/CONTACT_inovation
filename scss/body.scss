@@ -1,0 +1,305 @@
+@import 'bourbon/bourbon'; // http://bourbon.io/
+@import 'compass/css3';
+
+@import '../partials/variables'; // colors, fonts etc...
+
+@import '../partials/mixins'; // custom mixins
+
+@import '../partials/layout'; // responsive grid and media queries
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
+
+
+html * {
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+    @include box-sizing(border-box);
+}
+
+body {
+    font: {
+        size:105%;
+        family: $primary-font;
+    }
+    
+    color:$color-1;
+    background-color:$color-4;
+}
+
+a {
+    color:$color-3;
+    text-decoration:none;
+}
+
+
+/* -------------------------------- 
+
+Layout
+
+-------------------------------- */
+@media only screen and (min-width: 320px) {
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+}
+
+
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+
+header {
+    
+}
+
+.cd-header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:$header-height-S;
+    background:rgba($color-4, .95);
+    box-shadow: 0 1px 2px rgba(#000, .2);
+    z-index:index($main-elements, navigation);
+    @include clearfix;
+    
+    #cd-logo {
+        float:left;
+        margin: 13px 0 0 5%;
+        
+        img {
+            display:block;
+        }
+    }
+    
+    
+    @include MQ(M) {
+        height: $header-height-M;
+        #cd-logo{
+            margin:23px 0 0 5%;
+        }
+    }
+}
+
+
+.footer {
+    position:relative;
+    bottom:0;
+    width:100%;
+    height:30%;
+    background:rgba($color-4, .95);
+    z-index:index($main-elements, navigation);
+    @include clearfix;
+
+}
+/* -------------------------------- 
+
+Screen etc.
+
+-------------------------------- */
+
+    
+/* コンテンツ */
+.item {
+  border-radius:10px;
+  background:#fff;
+  padding:1.5em;
+  border:1px solid #999;
+  margin:0 .5em 1.5em;
+  width:100%;
+  @include box-sizing(border-box);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.18);
+  @include border-radius(3px);
+
+}
+
+img {
+  max-width:100%;
+  height:auto;
+}
+
+p {
+  text-align:left;
+
+}
+
+
+
+@media only screen and (min-width: 320px) {
+    
+/* layout */
+.cd-container {
+    padding-top:20%;
+}
+.main-container {
+    background:#f9f9f9;
+    margin-bottom:10px;
+}
+
+.main_A{
+    width:95%;
+    padding-left:5%;
+}
+
+.flexbox {
+    width:420px;
+    @include display-flex();
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+    margin-top:5%;
+}
+.item {
+    width: 70%;
+}
+
+
+/* main nav */
+.main-nav {
+    position:absolute;
+    top:0;
+    float:left;
+    width:100%;
+    padding:15px;
+    background:#f9f9f9 url('../img/cd-icon-menu.svg') no-repeat left center;
+    cursor:pointer;
+}
+
+
+.main-nav ul {
+    position:absolute;
+    top: 0;
+    width:100%;
+    
+    @include transform(translateY(-300%));
+}
+
+.main-nav ul.is-visible {
+    @include transform(translateY(50px));
+    background-color:#f8f8f8;
+    margin-left:-15px;
+}
+
+.main-nav ul li {
+    display:block;
+    height:40px;
+    padding-left:20px;
+    padding-top:13px;
+    color:#8e7d7f;
+}
+.main-nav ul li:hover {
+    background:#cedff2;
+}
+
+
+}
+
+
+@media only screen and (min-width: 768px) {
+/* layout  */
+
+.cd-container {
+    width:800px;
+    @include display-flex();
+    margin:0 auto;
+    padding-top:10%;
+    &::after {
+        content:'';
+        display:table;
+        clear:both;
+    }
+}
+.main_A{
+    width:100%;
+}
+
+.main-container {       
+    margin: 0 10px 0 0;
+    @include flex(2);
+}
+.flexbox {
+    width:420px;
+    @include display-flex();
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+    margin-top:5%;
+}
+.item {
+    width: 70%;
+}
+
+
+/* main nav */
+    .main-nav {
+        padding:5px 0 20px 0;
+        margin:0 0 15px 0;
+        position: absolute;
+        top:0;
+        width:100%;
+        cursor: auto;
+        height:59px;
+        background-color:#f9f9f9;
+        background-image: none;
+    }
+    
+    .main-nav ul {
+        margin-top:0;
+        padding-top:10px;
+        padding-bottom:15px;
+        position:static;
+        @include display-flex();
+        @include justify-content(flex-end);
+        @include transform(translateY(-17px)); 
+    }
+    
+    .main-nav ul li {
+        display:inline;
+        padding:30px 30px 30px 25px;
+        margin: 0 0 50px 0;
+    }
+    
+    .main-nav ul li:hover {
+        background:#cedff2;
+    }
+    
+    .main-nav ul.is-visible {
+        @include transform(translateY(0));
+    }
+}
+    
+    
+
+
+
+
+@media only screen and (min-width: 1050px) {
+  .cd-container {
+    padding-top:7%;
+  }
+  .main_A{
+    width:95%;
+}
+  .flexbox {
+  width:800px;
+  @include display-flex();
+  @include flex-wrap(wrap);
+  @include flex-direction(center);
+  @include align-items(flex-start);
+  }
+
+  .item {
+  width:50%;
+
+  }
+
+}
+
