@@ -57,7 +57,7 @@ if ( $name && $email ) {
 $file[0] = "./img/ticket.gif";
 // $file[1] = "/tmp/test.doc";
 $body = $name . "様" . "\n" . PHP_EOL;
-$body .= "この度は、群馬イノベーションアワード2015" . PHP_EOL;
+$body .= "群馬イノベーションアワード2015" . PHP_EOL;
 $body .= "ファイナルステージ観覧お申込みを承りました。" . "\n" . PHP_EOL;
 $body .= "\n" . PHP_EOL;
 $body .= "入場券を" . $name . "様のメールアドレス《" . $email . "》に送らせていただきました。" . "\n" . PHP_EOL;
@@ -74,7 +74,7 @@ SendAttachedMail( $to , $email , "群馬イノベーションアワード2015" ,
 $GIAsubj = mb_convert_encoding("群馬イノベーションアワード2015","JIS", "auto");
 $myName = mb_encode_mimeheader($email,  "ISO-2022-JP" , 'auto');
 
-$to = "ohata@raijin.com";
+$to = "info@gi-award.com";
 
 
 $age = $_REQUEST['年齢'];
